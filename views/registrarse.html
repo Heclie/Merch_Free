@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href='/public/css/registrarse.css' rel="stylesheet" type="text/css">
+
+<body>
+    <header>
+        <div class="main"><img class="logo" src='/public/img/logo-mercado-liebre.svg' alt="logo">
+            <ul class="barra">
+                <input class="buscador" type="text" placeholder="Buscar productos, marcas"><button class="lupa"><i class="fa fa-search"></i></button>
+            </ul>
+            <h3 class="subtitulo"><i class="fas fa-hand-holding-usd"></i>compra en cuotas y sin tarjeta de credito</h3>
+        </div>
+        <div class="burger-menu">
+            <button class="hamburguesa"><i class="fas fa-bars"></i></button>
+        </div>
+        <nav>
+            <ul class="menus">
+                <li class="caja1"><a href="/home">ofertas</a></li>
+                <li class="caja1"><a href="#">tiendas oficiales</a></li>
+                <li class="caja1"><a href="#">vender</a></li>
+                <li class="caja1"><a href="#">ayuda</a></li>
+                <li class="caja2"><a href="/register">crea tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li class="caja2"><a href="/login">ingresa</a><i class="fas fa-sign-out-alt"></i></li>
+                <li class="caja2"><a href="#">mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body">
+    <div class="register-container">
+        <h1>Registro de Usuario</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span class="error-message" id="error-nombre"></span>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Nombre de usuari@:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </div>
+            <div class="form-group">
+                <label for="perfil">Perfil del Usuario:</label>
+                <input type="radio" id="perfil" name="perfil" value="comprador">
+                <label for="perfil">comprador</label> 
+                <input type="radio" id="perfil" name="perfil" value="vendedor">
+                <label for="perfil">vendedor</label>
+            </div>
+                <div class="form-group">
+                <label for="foto">Foto de Usuario:</label>
+                <input type="file" id="foto" name="foto" accept=".jpg" multiple>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+            </div>
+            <div class="forma-group">
+                <button type="submit">Enviar</button>
+            </div>
+            <div class="forma-group">
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <footer>
+        <section>
+        <div class="lista1">
+            <i class="fas fa-credit-card" style="color: #005eff;"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                seguro!</p>
+        </div>
+        <div class="lista2">
+            <i class="fas fa-gift" style="color: #005eff;"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                Mercado Puntos.</p>
+        </div>
+        <div class="lista3">
+            <i class="fas fa-user-shield" style="color: #005eff;"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre
+                protegid@.</p>
+        </div>
+        </section>
+        <div class="lista4">
+            <p>Copyright © 1999-2023 MercadoLibre S.R.L.</p>
+        </div>
+    </footer>
+</body>
+</html>
